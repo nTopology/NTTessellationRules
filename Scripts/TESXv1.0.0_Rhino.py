@@ -3,7 +3,7 @@
 ### TESX writer v1.0.0
 ###
 ### Notes:
-### Currently, this script is used to export a custom tessellation. The script is setup
+### Currently, this script is used to export a custom tessellation from Rhino. The script is setup
 ### to write out a tessellation with all of the same unit topologies, even though the file spec allows
 ### for multiple unit types.
 
