@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tessellation name="testTess">
+    <units>
+        <unit>
+            <vertices>
+                <vertex x="-0.5" y="-0.5" z="-3.5"/>
+                <vertex x="-0.5" y="5.5" z="-3.5"/>
+                <vertex x="0.5" y="3.5" z="-0.5"/>
+                <vertex x="0.5" y="-0.5" z="-0.5"/>
+                <vertex x="-0.5" y="-0.5" z="0.5"/>
+                <vertex x="-0.5" y="0.5" z="4.5"/>
+                <vertex x="0.5" y="0.5" z="2.5"/>
+                <vertex x="0.5" y="-0.5" z="0.5"/>
+            </vertices>
+            <faces>
+                <face>
+                    <face_vert n="3"/>
+                    <face_vert n="7"/>
+                    <face_vert n="4"/>
+                    <face_vert n="0"/>
+                </face>
+                <face>
+                    <face_vert n="0"/>
+                    <face_vert n="4"/>
+                    <face_vert n="5"/>
+                    <face_vert n="1"/>
+                </face>
+                <face>
+                    <face_vert n="1"/>
+                    <face_vert n="5"/>
+                    <face_vert n="6"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="2"/>
+                    <face_vert n="6"/>
+                    <face_vert n="7"/>
+                    <face_vert n="3"/>
+                </face>
+                <face>
+                    <face_vert n="3"/>
+                    <face_vert n="0"/>
+                    <face_vert n="1"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="6"/>
+                    <face_vert n="5"/>
+                    <face_vert n="4"/>
+                    <face_vert n="7"/>
+                </face>
+            </faces>
+        </unit>        
+        <unit>
+            <vertices>
+                <vertex x="0" y="0.70710677" z="0"/>
+                <vertex x="0" y="0" z="0.70710677"/>
+                <vertex x="0" y="-0.70710677" z="0"/>
+                <vertex x="-0.70710677" y="0" z="0"/>
+                <vertex x="0" y="0" z="-0.70710677"/>
+                <vertex x="0.70710677" y="0" z="0"/>
+            </vertices>
+            <faces>
+                <face>
+                    <face_vert n="0"/>
+                    <face_vert n="1"/>
+                    <face_vert n="5"/>
+                </face>
+                <face>
+                    <face_vert n="3"/>
+                    <face_vert n="1"/>
+                    <face_vert n="0"/>
+                </face>
+                <face>
+                    <face_vert n="2"/>
+                    <face_vert n="1"/>
+                    <face_vert n="3"/>
+                </face>
+                <face>
+                    <face_vert n="5"/>
+                    <face_vert n="1"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="2"/>
+                    <face_vert n="4"/>
+                    <face_vert n="5"/>
+                </face>
+                <face>
+                    <face_vert n="3"/>
+                    <face_vert n="4"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="0"/>
+                    <face_vert n="4"/>
+                    <face_vert n="3"/>
+                </face>
+                <face>
+                    <face_vert n="5"/>
+                    <face_vert n="4"/>
+                    <face_vert n="0"/>
+                </face>
+            </faces>
+        </unit>
+        <unit>
+            <vertices>
+                <vertex x="0.35355338" y="-0.35355338" z="0.35355338"/>
+                <vertex x="-0.35355338" y="0.35355338" z="0.35355338"/>
+                <vertex x="0.35355338" y="0.35355338" z="-0.35355338"/>
+                <vertex x="-0.35355338" y="-0.35355338" z="-0.35355338"/>
+            </vertices>
+            <faces>
+                <face>
+                    <face_vert n="1"/>
+                    <face_vert n="0"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="3"/>
+                    <face_vert n="0"/>
+                    <face_vert n="1"/>
+                </face>
+                <face>
+                    <face_vert n="2"/>
+                    <face_vert n="0"/>
+                    <face_vert n="3"/>
+                </face>
+                <face>
+                    <face_vert n="1"/>
+                    <face_vert n="2"/>
+                    <face_vert n="3"/>
+                </face>
+            </faces>
+        </unit>
+        <unit>
+            <vertices>
+                <vertex x="-1" y="2.8421709e-13" z="5.5"/>
+                <vertex x="-0.5" y="0.86602539" z="3.5"/>
+                <vertex x="0.5" y="0.86602539" z="0.125"/>
+                <vertex x="1" y="-1.563194e-13" z="0.125"/>
+                <vertex x="0.5" y="-0.86602539" z="0.125"/>
+                <vertex x="-0.5" y="-0.86602539" z="0.5"/>
+                <vertex x="-1" y="2.8421709e-13" z="-0.5"/>
+                <vertex x="-0.5" y="-0.86602539" z="-0.5"/>
+                <vertex x="0.5" y="-0.86602539" z="-0.5"/>
+                <vertex x="1" y="-1.563194e-13" z="-0.5"/>
+                <vertex x="0.5" y="0.86602539" z="-0.5"/>
+                <vertex x="-0.5" y="0.86602539" z="-0.5"/>
+            </vertices>
+            <faces>
+                <face>
+                    <face_vert n="0"/>
+                    <face_vert n="5"/>
+                    <face_vert n="4"/>
+                    <face_vert n="3"/>
+                    <face_vert n="2"/>
+                    <face_vert n="1"/>
+                </face>
+                <face>
+                    <face_vert n="6"/>
+                    <face_vert n="7"/>
+                    <face_vert n="5"/>
+                    <face_vert n="0"/>
+                </face>
+                <face>
+                    <face_vert n="7"/>
+                    <face_vert n="8"/>
+                    <face_vert n="4"/>
+                    <face_vert n="5"/>
+                </face>
+                <face>
+                    <face_vert n="8"/>
+                    <face_vert n="9"/>
+                    <face_vert n="3"/>
+                    <face_vert n="4"/>
+                </face>
+                <face>
+                    <face_vert n="9"/>
+                    <face_vert n="10"/>
+                    <face_vert n="2"/>
+                    <face_vert n="3"/>
+                </face>
+                <face>
+                    <face_vert n="10"/>
+                    <face_vert n="11"/>
+                    <face_vert n="1"/>
+                    <face_vert n="2"/>
+                </face>
+                <face>
+                    <face_vert n="11"/>
+                    <face_vert n="6"/>
+                    <face_vert n="0"/>
+                    <face_vert n="1"/>
+                </face>
+                <face>
+                    <face_vert n="6"/>
+                    <face_vert n="11"/>
+                    <face_vert n="10"/>
+                    <face_vert n="9"/>
+                    <face_vert n="8"/>
+                    <face_vert n="7"/>
+                </face>
+            </faces>
+        </unit>
+    </units>
+
+
+    <rules>
+        <rule name="Hex prism">
+            <parent unit="3"/>
+            <children>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="-1.9832224e-15" db="-1.2692624e-15" dc="1" dd="1"/>
+                </child>
+                <child unit="3">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="-1.9832224e-15" db="-1.2890946e-15" dc="-1" dd="1"/>
+                </child>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="1.5" db="-0.86602539" dc="-1.9832224e-17" dd="1"/>
+                </child>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="1.5" db="0.86602539" dc="-3.9664449e-17" dd="1"/>
+                </child>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="-2.6420636e-14" db="1.7320508" dc="-1.9832224e-17" dd="1"/>
+                </child>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="-1.5" db="0.86602539" dc="-1.9832224e-17" dd="1"/>
+                </child>
+                <child unit="1">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="2.831656e-14" db="-1.7320508" dc="-1.9832224e-17" dd="1"/>
+                </child>
+                <child unit="3">
+                    <mat4 aa="1" ab="0" ac="0" ad="0" ba="0" bb="1" bc="0" bd="0" ca="0" cb="0" cc="1" cd="0" da="-1.5" db="-0.86602539" dc="0" dd="1"/>
+                </child>
+            </children>
+        </rule>
+    </rules>
+</tessellation>

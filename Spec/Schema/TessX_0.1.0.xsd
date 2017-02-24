@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="https://github.com/nTopology/NTLatticeGraph/blob/master/schemas/NTLG_001.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  targetNamespace="https://github.com/nTopology/Alpha2/blob/master/schemas/TessX_0.1.0.xsd"
+  elementFormDefault="unqualified" attributeFormDefault="unqualified" blockDefault="#all">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    <xs:annotation>
+      <xs:documentation><![CDATA[
+        Schema notes:
+        Items within this schema follow a simple naming convention of appending a prefix indicating the
+        type of element for references:
+        Unprefixed: Element names
+        CT_: Complex types
+        ST_: Simple types
+        ]]></xs:documentation>
+      </xs:annotation>
+
+      <!-- Complex Types -->
+      <xs:complexType name="CT_Units">
+        <xs:sequence>
+          <xs:element ref="unit" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Unit">
+          <xs:element ref="vertices" maxOccurs="2147483647"/>
+          <xs:element ref="faces" maxOccurs="2147483647"/>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Vertices">
+        <xs:sequence>
+          <xs:element ref="vertex" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Vertex">
+        <xs:attribute name="x" type="ST_Number" use="required"/>
+        <xs:attribute name="y" type="ST_Number" use="required"/>
+        <xs:attribute name="z" type="ST_Number" use="required"/>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Faces">
+        <xs:sequence>
+          <xs:element ref="face" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Face">
+        <xs:sequence>
+          <xs:element ref="face_vert" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_FaceVert">
+        <xs:attribute name="n" type="ST_ResourceID" use="required"/>
+      </xs:complexType>
+    
+
+      <xs:complexType name="CT_Mat4">
+        <xs:attribute name="aa" type="ST_Number" use="required"/>
+        <xs:attribute name="ab" type="ST_Number" use="required"/>
+        <xs:attribute name="ac" type="ST_Number" use="required"/>
+        <xs:attribute name="ad" type="ST_Number" use="required"/>
+
+        <xs:attribute name="ba" type="ST_Number" use="required"/>
+        <xs:attribute name="bb" type="ST_Number" use="required"/>
+        <xs:attribute name="bc" type="ST_Number" use="required"/>
+        <xs:attribute name="bd" type="ST_Number" use="required"/>
+
+        <xs:attribute name="ca" type="ST_Number" use="required"/>
+        <xs:attribute name="cb" type="ST_Number" use="required"/>
+        <xs:attribute name="cc" type="ST_Number" use="required"/>
+        <xs:attribute name="cd" type="ST_Number" use="required"/>
+
+        <xs:attribute name="da" type="ST_Number" use="required"/>
+        <xs:attribute name="db" type="ST_Number" use="required"/>
+        <xs:attribute name="dc" type="ST_Number" use="required"/>
+        <xs:attribute name="dd" type="ST_Number" use="required"/>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Rules">
+        <xs:sequence>
+          <xs:element ref="rule" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Rule">
+        <xs:element ref="parent" />
+        <xs:element ref="children" />
+      </xs:complexType>
+
+      <xs:complexType name="CT_Children">
+        <xs:sequence>
+          <xs:element ref="child" maxOccurs="2147483647"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Child">
+        <xs:attribute name="unit" type="ST_ResourceID" use="required"/>
+        <xs:element ref="mat4" maxOccurs="1"/>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Parent">
+        <xs:attribute name="unit" type="ST_ResourceID" use="required"/>
+      </xs:complexType>
+
+      <xs:complexType name="CT_Tessellation">
+        <xs:element ref="units" />
+        <xs:element ref="children" />
+      </xs:complexType>
+
+      <!-- Simple Types -->
+    </xs:simpleType>
+    <xs:simpleType name="ST_ResourceID">
+      <xs:restriction base="xs:positiveInteger">
+        <xs:maxExclusive value="2147483648"/>
+      </xs:restriction>
+    </xs:simpleType>
+
+  </xs:simpleType>
+  <xs:simpleType name="ST_Number">
+    <xs:restriction base="xs:double">
+      <xs:whiteSpace value="collapse"/>
+      <xs:pattern value="((\-|\+)?(([0-9]+(\.[0-9]+)?)|(\.[0-9]+))((e|E)(\-|\+)?[0-9]+)?)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Elements -->
+  <xs:element name="tessellation" type="CT_Tessellation"/>
+
+  <xs:element name="units" type="CT_Units"/>
+  <xs:element name="unit" type="CT_Unit"/>
+  <xs:element name="vertices" type="CT_Vertices"/>
+  <xs:element name="vertex" type="CT_Vertex"/>
+  <xs:element name="faces" type="CT_Faces"/>
+  <xs:element name="face" type="CT_Face"/>
+  <xs:element name="face_vert" type="CT_FaceVert"/>
+
+
+  <xs:element name="rules" type="CT_Rules"/>
+  <xs:element name="rule" type="CT_Rule"/>
+
+  <xs:element name="mat4" type="CT_Mat4"/>
+  <xs:element name="parent" type="CT_Parent"/>
+
+  <xs:element name="children" type="CT_Children"/>
+  <xs:element name="child" type="CT_Child"/>
+
+</xs:schema>
