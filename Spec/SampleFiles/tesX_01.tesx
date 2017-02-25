@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--.tesx file1.0.0 exported from Rhino-->
+<tessellation name="New Rule">
+  <units>
+    <unit>
+      <vertices>
+        <vertex x="-18.7388583473" y="-16.7989929183" z="0.0" />
+        <vertex x="14.2536630893" y="-16.7989929183" z="0.0" />
+        <vertex x="14.2536630893" y="-16.7989929183" z="18.4508560078" />
+        <vertex x="-18.7388583473" y="-16.7989929183" z="18.4508560078" />
+        <vertex x="14.2536630893" y="32.3662192407" z="0.0" />
+        <vertex x="14.2536630893" y="32.3662192407" z="18.4508560078" />
+        <vertex x="-18.7388583473" y="32.3662192407" z="0.0" />
+        <vertex x="-18.7388583473" y="32.3662192407" z="18.4508560078" />
+      </vertices>
+      <faces>
+        <face>
+          <face_vert n="0" />
+          <face_vert n="1" />
+          <face_vert n="2" />
+          <face_vert n="3" />
+        </face>
+        <face>
+          <face_vert n="1" />
+          <face_vert n="4" />
+          <face_vert n="5" />
+          <face_vert n="2" />
+        </face>
+        <face>
+          <face_vert n="4" />
+          <face_vert n="6" />
+          <face_vert n="7" />
+          <face_vert n="5" />
+        </face>
+        <face>
+          <face_vert n="6" />
+          <face_vert n="0" />
+          <face_vert n="3" />
+          <face_vert n="7" />
+        </face>
+        <face>
+          <face_vert n="0" />
+          <face_vert n="6" />
+          <face_vert n="4" />
+          <face_vert n="1" />
+        </face>
+        <face>
+          <face_vert n="3" />
+          <face_vert n="2" />
+          <face_vert n="5" />
+          <face_vert n="7" />
+        </face>
+      </faces>
+    </unit>
+  </units>
+  <rules>
+    <rule name="New Rule">
+      <parent unit="0" />
+      <children>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="-1.27026494929" ba="0.0" bb="1.02557583584" bc="0.0" bd="17.9865889518" ca="0.0" cb="0.0" cc="1.02557583584" cd="16.5811803129" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="14.2247697531" ba="0.0" bb="1.02557583584" bc="0.0" bd="42.3519558992" ca="0.0" cb="0.0" cc="1.02557583584" cd="1.47260464691" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="32.3589108524" ba="0.0" bb="1.02557583584" bc="0.0" bd="-16.7583033403" ca="0.0" cb="0.0" cc="1.02557583584" cd="1.47260464691" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="-28.0124194197" ba="0.0" bb="1.02557583584" bc="0.0" bd="-16.7583033403" ca="0.0" cb="0.0" cc="1.02557583584" cd="1.47260464691" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="-1.27026494929" ba="0.0" bb="1.02557583584" bc="0.0" bd="-42.0356597734" ca="0.0" cb="0.0" cc="1.02557583584" cd="1.47260464691" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+        <child unit="0">
+          <mat4 aa="1.02557583584" ab="0.0" ac="0.0" ad="-1.27026494929" ba="0.0" bb="1.02557583584" bc="0.0" bd="-10.0432648102" ca="0.0" cb="0.0" cc="1.02557583584" cd="-23.2377815488" da="0.0" db="0.0" dc="0.0" dd="1.0" />
+        </child>
+      </children>
+    </rule>
+  </rules>
+</tessellation>
