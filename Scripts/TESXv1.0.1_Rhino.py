@@ -30,7 +30,7 @@ def main():
     parentChildren = [parent,children]
 #Check to see if the user wants to normalize the units?
     items = ("Normalize", "No", "Yes")
-    doNormalize = rs.GetBoolean("Boolean options", items, (True) )
+    doNormalize = rs.GetBoolean("Options", items, (True) )
     if doNormalize[0]:
         parentChildren = normalizeBreps(parentChildren[0], parentChildren[1])
 
